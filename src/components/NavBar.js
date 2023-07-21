@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
@@ -27,24 +28,29 @@ function NavBar() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/about">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/login">
                 Login
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                About Us
+              <Link className="nav-link" to="/signup">
+                Sign Up
               </Link>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form className="d-flex" role="search">
             <input
-              class="form-control me-2"
+              className="form-control me-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button className="btn btn-outline-success" type="submit">
               Search
             </button>
           </form>
